@@ -4,35 +4,6 @@
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "icon": "./hashtag.png"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "notepad"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin",
-            "linux"
-          ]
-        },
-        {
-          "name": "@pengx17/electron-forge-maker-appimage",
-          "platforms":[
-            "linux"
-          ],
-          "config":{}
-        }
-      ]
-    }
-  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -56,7 +27,6 @@
     "@electron-forge/plugin-fuses": "^7.10.2",
     "@electron-forge/plugin-vite": "^7.10.2",
     "@electron/fuses": "^1.8.0",
-    "@pengx17/electron-forge-maker-appimage": "^1.2.1",
     "electron": "39.0.0",
     "vite": "^5.4.21"
   },
